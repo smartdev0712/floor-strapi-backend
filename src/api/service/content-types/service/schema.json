@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "businesses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::business.business",
+      "mappedBy": "services"
+    },
+    "service_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service-category.service-category",
+      "mappedBy": "service"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "canada_cities",
+  "info": {
+    "singularName": "canada-citie",
+    "pluralName": "canada-cities",
+    "displayName": "canada_city",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city_ascii": {
+      "type": "string",
+      "required": true
+    },
+    "province_id": {
+      "type": "string",
+      "required": true
+    },
+    "province_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
