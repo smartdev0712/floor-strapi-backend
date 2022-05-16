@@ -14,5 +14,15 @@ module.exports = ({ env }) => ({
         },
       },
     },
+    seo: {
+      enabled: true,
+    },
+    "measurement-protocol": {
+      config: {
+        apiSecret: env('API_SECRET'),
+        measurementId: env('MEASUREMENT_ID'),
+        useValidationServer: false,
+      }
+    },
     // ...
   });
