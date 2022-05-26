@@ -107,6 +107,7 @@ coverage
 #.env
 ############################
 
+yarn.lock
 license.txt
 exports
 *.cache
