@@ -25,6 +25,12 @@
       "relation": "manyToOne",
       "target": "api::service.service",
       "inversedBy": "service_categories"
+    },
+    "businesses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::business.business",
+      "mappedBy": "service_categories"
     }
   }
 }

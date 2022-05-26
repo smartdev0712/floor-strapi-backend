@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_open_close_open_close_times",
+  "info": {
+    "displayName": "open_close_time",
+    "icon": "cart-plus"
+  },
+  "options": {},
+  "attributes": {
+    "weekday": {
+      "type": "string"
+    },
+    "open_time": {
+      "type": "time"
+    },
+    "close_time": {
+      "type": "time"
+    }
+  }
+}

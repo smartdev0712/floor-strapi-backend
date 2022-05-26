@@ -23,6 +23,12 @@
     "province_name": {
       "type": "string",
       "required": true
+    },
+    "businesses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::business.business",
+      "mappedBy": "canada_city"
     }
   }
 }

@@ -51,14 +51,33 @@
       "inversedBy": "businesses"
     },
     "business_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "canada_city": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::canada-citie.canada-citie",
+      "inversedBy": "businesses"
+    },
+    "service_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service-category.service-category",
+      "inversedBy": "businesses"
+    },
+    "open_close_time": {
+      "displayName": "open_close_time",
+      "type": "component",
+      "repeatable": true,
+      "component": "open-close.open-close-time"
     }
   }
 }
